@@ -3,7 +3,7 @@
 [![Node.js](https://img.shields.io/badge/Node.js-14+-green.svg)](https://nodejs.org/)
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
-一个功能强大的 Skill，用于提取微信公众号文章的元数据和内容。支持多种文章类型，包括图文、视频、图片集、语音和转载文章。 可以直接给 OpenClaw 等 AI Agent 使用。
+一个 Claude Code Skill，用于提取微信公众号文章的元数据和内容。支持多种文章类型，包括图文、视频、图片集、语音和转载文章。当用户需要提供微信公众号文章链接（mp.weixin.qq.com）时，Claude 会自动触发此 Skill 来提取文章信息。
 
 ## 功能特性
 
@@ -19,17 +19,31 @@
 
 ## 安装
 
-```bash
-npm install wechat-article-extractor
+这是一个 Claude Code Skill，可以通过以下方式安装：
+
+### 通过 Claude Code 安装（推荐）
+
+在 Claude Code 中运行：
+
+```
+/skill install wechat-article-extractor
 ```
 
-或者克隆此仓库：
+或指定目录安装：
+
+```
+/skill install /path/to/wechat-article-extractor-skill
+```
+
+### 手动克隆安装
 
 ```bash
-git clone https://github.com/yourusername/wechat-article-extractor.git
-cd wechat-article-extractor
+git clone https://github.com/yourusername/wechat-article-extractor-skill.git
+cd wechat-article-extractor-skill
 npm install
 ```
+
+然后在 Claude Code 中将该目录作为 Skill 加载。
 
 ## 使用方法
 
@@ -176,11 +190,11 @@ const result = await extract(url, {
 ## 项目结构
 
 ```
-wechat-article-extractor/
+wechat-article-extractor-skill/
 ├── scripts/
 │   ├── extract.js    # 核心提取逻辑
 │   └── errors.js     # 错误代码定义
-├── SKILL.md          # 技能文档（Claude Skill 格式）
+├── SKILL.md          # Skill 定义文件（Claude Skill 格式，包含触发条件和描述）
 ├── package.json      # 项目配置
 └── README.md         # 本文件
 ```
