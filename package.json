@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "cheerio": "^1.2.0",
+    "dayjs": "^1.11.19",
+    "lodash.unescape": "^4.0.1",
+    "qs": "^6.15.0",
+    "request-promise": "^4.2.6"
+  }
+}
