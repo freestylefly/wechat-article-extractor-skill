@@ -3,7 +3,7 @@
 [![Node.js](https://img.shields.io/badge/Node.js-14+-green.svg)](https://nodejs.org/)
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
-一个功能强大的 Node.js 库，用于提取微信公众号文章的元数据和内容。支持多种文章类型，包括图文、视频、图片集、语音和转载文章。
+一个功能强大的 Skill，用于提取微信公众号文章的元数据和内容。支持多种文章类型，包括图文、视频、图片集、语音和转载文章。 可以直接给 OpenClaw 等 AI Agent 使用。
 
 ## 功能特性
 
